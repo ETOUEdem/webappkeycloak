@@ -14,7 +14,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file ./keycloak-18.0.0/pom.xml
       working-directory: my-app-path
     - name: Azure WebApp
       uses: Azure/webapps-deploy@v2
