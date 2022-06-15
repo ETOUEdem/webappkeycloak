@@ -26,6 +26,7 @@
 		</dependencies>
 	</dependencyManagement>
 	<scm>
+    
 		<connection>scm:git:https://code-repo.d4science.org/gCubeSystem/${project.artifactId}.git</connection>
 		<developerConnection>scm:git:https://code-repo.d4science.org/gCubeSystem/${project.artifactId}.git</developerConnection>
 		<url>https://code-repo.d4science.org/gCubeSystem/${project.artifactId}</url>
