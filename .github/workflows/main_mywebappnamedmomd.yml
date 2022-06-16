@@ -21,8 +21,8 @@ jobs:
         with:
           java-version: '11'
 
-      - name: Build with Maven
-        run: mvn -B package --file ./keycloak-18.0.0/pom.xml
+    #  - name: Build with Maven
+     #   run: mvn -B package --file ./keycloak-18.0.0/pom.xml
         
 
       - name: Upload artifact for deployment job
