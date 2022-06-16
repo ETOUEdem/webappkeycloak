@@ -21,8 +21,8 @@ jobs:
         with:
           java-version: '11'
 
-      - name: Build with Maven
-        run: mvn clean install
+   #    - name: Build with Maven
+    #     run: mvn clean install
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -50,4 +50,4 @@ jobs:
           app-name: 'MYWEBAPPNAMEDMOMD'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1646BACA27384E70A053068F8E178346 }}
-          package: '*.jar'
+          package: '${{ github.workspace }}/target/*.jar'
